@@ -1,0 +1,32 @@
+﻿@model IEnumerable<MVC_ENTITY_CORE.Models.Company>
+@{
+}
+<a asp-action="CREATE" asp-controller="Company" class="btn btn-outline-danger">Create </a>
+<table class="table table-bordered">
+    <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Gender</th>
+        <th>Mobile</th>
+        <th>Department</th>
+    </tr>
+    @foreach (var location in Model)
+    {
+<tr>
+    
+    <td>@location.name</td>
+    <td>@location.email</td>
+    <td>@location.gender</td>
+    <td>@location.mobile</td>
+    <td>@location.department_id</td>
+
+    
+
+
+
+
+
+</tr>
+    }
+
+</table>

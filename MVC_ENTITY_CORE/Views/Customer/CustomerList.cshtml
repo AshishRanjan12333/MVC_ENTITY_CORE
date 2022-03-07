@@ -1,0 +1,34 @@
+﻿@model IEnumerable<MVC_ENTITY_CORE.Models.Customer>
+<table class=" table table-bordered">
+    <tr>
+        <th>NAME</th>
+        <th>EMAIL</th>
+        <th>MOBILE</th>
+
+
+
+    </tr>
+   @foreach (var cust in Model)
+    {
+      <tr>
+        <td>
+            @cust.NAME
+        </td>
+       <td>
+           @cust.EMAIL
+       </td>
+        <td>
+           @cust.MOBILE
+        </td>
+    
+
+      </tr>
+    }
+</table>
+
+    
+
+
+
+@{
+}
